@@ -91,6 +91,7 @@ const WholeBlock = styled<{ banner?: string }, "div">("div")`
   @media (orientation: portrait) {
     width: 100vw;
     height: 40vh;
+    max-height: 55vw;
   }
 `;
 

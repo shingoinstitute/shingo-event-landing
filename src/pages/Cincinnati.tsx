@@ -32,6 +32,7 @@ const Subtitle = styled.h1`
 `
 
 const StyledTextBlock = styled(TextBlock)`
+  font-size: 17px;
   width: 500px;
   max-width: 90%;
   margin: auto 20px;
@@ -49,15 +50,18 @@ const Quote = styled.p`
   text-align: center;
   font-size: 35px;
   width: 1100px;
-  max-width: 80%;
+  max-width: 90%;
   margin: 30px auto 50px;
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
   border-top: solid 5px #DB8E39;
   border-bottom: solid 5px #DB8E39;
   font-style: italic;
 
   @media (orientation: portrait) {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 `
 
@@ -109,7 +113,7 @@ class Cincinnati extends React.Component<{}> {
           <Subtitle>Make Work Meaningful</Subtitle>
           <Row>
             <StyledTextBlock/>
-            <StyledVideoBlock video="https://www.youtube.com/embed/L2nevo3fJzI"/>
+            <StyledVideoBlock video="https://www.youtube.com/embed/ofhB2HjRP8Y"/>
           </Row>
           <Quote>"The speakers were excellent, the organization of the Conference was brilliant, and the venue was great!"</Quote>
           <Row>
