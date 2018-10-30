@@ -17,6 +17,9 @@ OPTIONS:
 "
 
 build() {
+    export NODE_ENV=production
+    npm run build
+
     docker build --tag docker.shingo.org/"$IMG_NAME":"$TAG" "$@" .
     if [[ "$PUSH" = true ]]; then
         docker login docker.shingo.org
