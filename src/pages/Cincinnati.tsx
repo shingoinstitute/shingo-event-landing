@@ -17,7 +17,7 @@ const Row = styled.div`
   justify-content: center;
   align-items: center;
 `
-
+/*
 const Subtitle = styled.h1`
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +30,7 @@ const Subtitle = styled.h1`
     margin: 25px auto;
   }
 `
+*/
 
 const StyledTextBlock = styled(TextBlock)`
   font-size: 17px;
@@ -97,6 +98,15 @@ const ButtonText = styled.p`
   }
 `
 
+const Bar = styled.div`
+  width: 1100px;
+  max-width: 90%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: solid 5px #DB8E39;
+  margin: 30px auto;
+`
+
 
 class Cincinnati extends React.Component<{}> {
   render() {
@@ -106,19 +116,20 @@ class Cincinnati extends React.Component<{}> {
         <TitleBlock
               banner = 'https://res.cloudinary.com/shingo/image/upload/v1539204551/iStock-124393964_blue_small2_zrxr82.jpg'
               title = 'SHINGO CONFERENCE'
-              date = 'CINCINNATI, OHIO • MAY 1-2, 2019'
+              subtitle = 'MAKE WORK MEANINGFUL'
+              info = 'CINCINNATI, OHIO • MAY 1-2, 2019'
               register = 'https://www.cvent.com/d/ngqnct'
         />
         <Content>
-          <Subtitle>Make Work Meaningful</Subtitle>
+          <Bar/>
           <Row>
             <StyledTextBlock/>
             <StyledVideoBlock video="https://www.youtube.com/embed/ofhB2HjRP8Y"/>
           </Row>
-          <Quote>"The speakers were excellent, the organization of the Conference was brilliant, and the venue was great!"</Quote>
+          <Quote>"The speakers were excellent, the organization of the conference was brilliant, and the venue was great!"</Quote>
           <Row>
-            <Button href="https://www.cvent.com/d/ngqnct">
-              <ButtonText>Summary</ButtonText>
+            <Button href="http://www.cvent.com/events/31st-annual-shingo-conference/speakers-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
+              <ButtonText>Speakers</ButtonText>
             </Button>
             <Button href="http://www.cvent.com/events/31st-annual-shingo-conference/agenda-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
               <ButtonText>Agenda</ButtonText>

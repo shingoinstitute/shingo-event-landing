@@ -4,8 +4,9 @@ import styled from '../styled-components';
 interface Props {
   className?: string;
   banner?: string;
-  date?: string;
+  info?: string;
   title?: string;
+  subtitle?: string;
   register?: string;
 }
 
@@ -30,12 +31,11 @@ const Title = styled.h1`
   color: white;
   font-size: 8vmin;
   margin: 10px;
-  margin-bottom: 100px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 
   @media (orientation: portrait) {
-    margin-bottom: 10%;
+    
   }
 `;
 
@@ -46,6 +46,7 @@ const Button = styled.a`
   width: 300px;
   height: 75px;
   margin: auto;
+  margin-top: 100px;
   position: relative;
   border-radius: 20px;
 
@@ -54,6 +55,7 @@ const Button = styled.a`
   @media (orientation: portrait) {
     width: 28vw;
     height: 7vw;
+    margin-top: 10%;
   }
 `;
 
@@ -86,7 +88,7 @@ const WholeBlock = styled<{ banner?: string }, "div">("div")`
 
   
   width: 100vw;
-  height: 90vh;
+  height: 70vh;
   
   @media (orientation: portrait) {
     width: 100vw;
@@ -100,11 +102,12 @@ class TitleBlock extends React.Component<Props, {}> {
     return (
       <WholeBlock banner={this.props.banner}>
         <TitleContainer>
-            <Info>{this.props.date}</Info>
+            <Info>{this.props.info}</Info>
             <Title className='title'>{this.props.title}</Title>
-              <Button href={this.props.register}>
-                  <ButtonText>REGISTER</ButtonText>
-              </Button>
+            <Info>{this.props.subtitle}</Info>
+            <Button href={this.props.register}>
+                <ButtonText>REGISTER</ButtonText>
+            </Button>
         </TitleContainer>
       </WholeBlock>
     );
