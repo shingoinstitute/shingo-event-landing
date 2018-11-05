@@ -21,6 +21,25 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-90530953-5', 'auto');
+      
+      // Replace the following lines with the plugins you want to use.
+      ga('require', 'cleanUrlTracker');
+      ga('require', 'eventTracker');
+      ga('require', 'impressionTracker');
+      ga('require', 'maxScrollTracker');
+      ga('require', 'mediaQueryTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'pageVisibilityTracker');
+      ga('require', 'urlChangeTracker');
+      // ...
+      
+      ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="%PUBLIC_URL%/autotrack.custom.js"></script>
   </head>
   <body>
     <noscript>
