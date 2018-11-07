@@ -49,7 +49,8 @@ const StyledVideoBlock = styled(VideoBlock)`
 
 const Quote = styled.p`
   text-align: center;
-  font-size: 35px;
+  font-size: 4.5vmin;
+  max-font-size: 35px;
   width: 1100px;
   max-width: 90%;
   margin: 30px auto 50px;
@@ -62,7 +63,7 @@ const Quote = styled.p`
   font-style: italic;
 
   @media (orientation: portrait) {
-    font-size: 4.5vw;
+    font-size: 4.5vmin;
   }
 `
 
@@ -70,22 +71,25 @@ const Button = styled.a`
   display: block;
   color: white;
   background: #DB8E39;
-  width: 300px;
-  height: 75px;
-  margin: 10px;
+  width: 26vmin;
+  height: 6.5vmin;
+  max-width: 300px;
+  max-height: 75px;
+  margin: auto;
   position: relative;
   border-radius: 20px;
 
   :hover { background: #FBAE59; }
 
   @media (orientation: portrait) {
-    width: 30vw;
-    height: 7.5vw;
+    width: 26vw;
+    height: 6.5vw;
+    margin-top: 10%;
   }
 `
 
 const ButtonText = styled.p`
-  font-size: 50px;
+  font-size: 3.75vmin;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -94,7 +98,7 @@ const ButtonText = styled.p`
   margin: 0;
 
   @media (orientation: portrait) {
-    font-size: 4.5vw;
+    font-size: 3.75vw;
   }
 `
 

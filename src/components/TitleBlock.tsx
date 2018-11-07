@@ -43,24 +43,26 @@ const Button = styled.a`
   display: block;
   color: white;
   background: #DB8E39;
-  width: 300px;
-  height: 75px;
+  width: 26vmin;
+  height: 6.5vmin;
+  max-width: 300px;
+  max-height: 75px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 10%;
   position: relative;
   border-radius: 20px;
 
   :hover { background: #FBAE59; }
 
   @media (orientation: portrait) {
-    width: 28vw;
-    height: 7vw;
+    width: 26vw;
+    height: 6.5vw;
     margin-top: 10%;
   }
 `;
 
 const ButtonText = styled.p`
-  font-size: 50px;
+  font-size: 3.75vmin;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -69,9 +71,14 @@ const ButtonText = styled.p`
   margin: 0;
 
   @media (orientation: portrait) {
-    font-size: 4vw;
+    font-size: 3.75vw;
   }
 `;
+
+const Subtitle = styled(Info)`
+  font-style: italic;
+  font-size: 5vmin;
+`
 
 
 const WholeBlock = styled<{ banner?: string }, "div">("div")`
@@ -104,7 +111,7 @@ class TitleBlock extends React.Component<Props, {}> {
         <TitleContainer>
             <Info>{this.props.info}</Info>
             <Title className='title'>{this.props.title}</Title>
-            <Info>{this.props.subtitle}</Info>
+            <Subtitle>{this.props.subtitle}</Subtitle>
             <Button href={this.props.register}>
                 <ButtonText>REGISTER</ButtonText>
             </Button>
