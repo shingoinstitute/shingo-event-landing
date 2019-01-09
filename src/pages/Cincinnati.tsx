@@ -67,7 +67,7 @@ const Quote = styled.p`
   }
 `
 
-const Button = styled.a`
+/*const Button = styled.a`
   display: block;
   color: white;
   background: #DB8E39;
@@ -75,7 +75,7 @@ const Button = styled.a`
   height: 6.5vmin;
   max-width: 300px;
   max-height: 75px;
-  margin: auto;
+  margin: 10px;
   position: relative;
   border-radius: 20px;
 
@@ -84,7 +84,6 @@ const Button = styled.a`
   @media (orientation: portrait) {
     width: 26vw;
     height: 6.5vw;
-    margin-top: 10%;
   }
 `
 
@@ -100,7 +99,7 @@ const ButtonText = styled.p`
   @media (orientation: portrait) {
     font-size: 3.75vw;
   }
-`
+`*/
 
 const Bar = styled.div`
   width: 1100px;
@@ -128,20 +127,9 @@ class Cincinnati extends React.Component<{}> {
           <Bar/>
           <Row>
             <StyledTextBlock/>
-            <StyledVideoBlock video="https://www.youtube.com/embed/ofhB2HjRP8Y"/>
+            <StyledVideoBlock video="https://www.youtube.com/embed/ofhB2HjRP8Y?autoplay=1&mute=1"/>
           </Row>
           <Quote>"The speakers were excellent, the organization of the conference was brilliant, and the venue was great!"</Quote>
-          <Row>
-            <Button href="http://www.cvent.com/events/31st-annual-shingo-conference/speakers-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
-              <ButtonText>Speakers</ButtonText>
-            </Button>
-            <Button href="http://www.cvent.com/events/31st-annual-shingo-conference/agenda-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
-              <ButtonText>Agenda</ButtonText>
-            </Button>
-            <Button href="http://www.cvent.com/events/31st-annual-shingo-conference/travel-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
-              <ButtonText>Travel</ButtonText>
-            </Button>
-          </Row>
         </Content>
         <Footer/>
       </div>

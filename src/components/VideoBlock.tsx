@@ -19,7 +19,7 @@ class VideoBlock extends React.Component<Props, {}> {
     render() {
         return (
             <Wrapper className={this.props.className}>
-                <Video src={this.props.video} frameBorder='0' allow="autoplay; encrypted-media"/>
+                <Video src={this.props.video} frameBorder='0' allow="autoplay; encrypted-media; muted"/>
             </Wrapper>
         );
     }
