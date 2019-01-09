@@ -27,6 +27,8 @@ const Info = styled.p`
   margin: 10px;
 `;
 
+
+
 const Title = styled.h1`
   color: white;
   font-size: 8vmin;
@@ -48,7 +50,9 @@ const Button = styled.a`
   max-width: 300px;
   max-height: 75px;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  margin-top-max: 100px;
   position: relative;
   border-radius: 20px;
 
@@ -57,8 +61,15 @@ const Button = styled.a`
   @media (orientation: portrait) {
     width: 26vw;
     height: 6.5vw;
-    margin-top: 10%;
   }
+`;
+
+const InfoLink = styled(Button)`
+  font-weight: 500;
+  text-decoration: none;
+  width: 16vmin;
+  height: 5vmin;
+  margin: 2%;
 `;
 
 const ButtonText = styled.p`
@@ -75,11 +86,21 @@ const ButtonText = styled.p`
   }
 `;
 
+const InfoLinkText = styled(ButtonText)`
+  font-size: 3vmin;
+`;
+
 const Subtitle = styled(Info)`
   font-style: italic;
   font-size: 5vmin;
 `
-
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+`
 
 const WholeBlock = styled<{ banner?: string }, "div">("div")`
   position: relative;
@@ -115,6 +136,17 @@ class TitleBlock extends React.Component<Props, {}> {
             <Button href={this.props.register}>
                 <ButtonText>REGISTER</ButtonText>
             </Button>
+            <Row>
+              <InfoLink href="http://www.cvent.com/events/31st-annual-shingo-conference/speakers-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
+                <InfoLinkText>Speakers</InfoLinkText>
+              </InfoLink>
+              <InfoLink href="http://www.cvent.com/events/31st-annual-shingo-conference/agenda-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
+                <InfoLinkText>Agenda</InfoLinkText>
+              </InfoLink>
+              <InfoLink href="http://www.cvent.com/events/31st-annual-shingo-conference/travel-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
+                <InfoLinkText>Travel</InfoLinkText>
+              </InfoLink>
+            </Row>
         </TitleContainer>
       </WholeBlock>
     );

@@ -1,14 +1,19 @@
 import * as React from 'react';
-// import styled from '../styled-components';
+import styled from '../styled-components';
 
 interface Props {
     className?: string;
 }
 
+const Title = styled.h2`
+    text-align: center;
+`;
+
 class TextBlock extends React.Component<Props, {}> {
     render() {
         return (
             <div className={this.props.className}>
+                <Title>Why You Should Attend</Title>
                 <p>A big part of shaping a culture that drives operational excellence is engaging the entire organization in improvement efforts. This year’s theme of “Make Work Meaningful” is about finding ways to create that culture of engagement in continuous improvement.</p>
                 <p>Join us to learn from leaders how to make great transformations in your organization using the principles of the <em>Shingo Model™</em>.</p>
                 <ul>
