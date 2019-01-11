@@ -121,7 +121,7 @@ class Cincinnati extends React.Component<{}> {
               title = 'SHINGO CONFERENCE'
               subtitle = 'MAKE WORK MEANINGFUL'
               info = 'CINCINNATI, OHIO • MAY 1-2, 2019'
-              register = 'https://www.cvent.com/d/ngqnct'
+              register = 'https://www.cvent.com/events/31st-annual-shingo-conference/registration-cc99906ddb2f4a5abdc73a67a0142f24.aspx?fqp=true'
         />
         <Content>
           <Bar/>
