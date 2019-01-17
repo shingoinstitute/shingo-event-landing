@@ -58,8 +58,8 @@ const Quote = styled.p`
   padding-bottom: 40px;
   padding-right: 20px;
   padding-left: 20px;
-  border-top: solid 5px #DB8E39;
-  border-bottom: solid 5px #DB8E39;
+  border-top: solid 5px ${props => props.theme.color};
+  border-bottom: solid 5px ${props => props.theme.color};
   font-style: italic;
 
   @media (orientation: portrait) {
@@ -106,7 +106,7 @@ const Bar = styled.div`
   max-width: 90%;
   padding-left: 20px;
   padding-right: 20px;
-  border-top: solid 5px #DB8E39;
+  border-top: solid 5px ${props => props.theme.color};
   margin: 30px auto;
 `
 
@@ -122,6 +122,9 @@ class Cincinnati extends React.Component<{}> {
               subtitle = 'MAKE WORK MEANINGFUL'
               info = 'CINCINNATI, OHIO • MAY 1-2, 2019'
               register = 'https://www.cvent.com/events/31st-annual-shingo-conference/registration-cc99906ddb2f4a5abdc73a67a0142f24.aspx?fqp=true'
+              speakers = 'https://www.cvent.com/events/31st-annual-shingo-conference/speakers-cc99906ddb2f4a5abdc73a67a0142f24.aspx'
+              agenda = 'https://www.cvent.com/events/31st-annual-shingo-conference/agenda-cc99906ddb2f4a5abdc73a67a0142f24.aspx'
+              travel = 'http://www.cvent.com/events/31st-annual-shingo-conference/travel-cc99906ddb2f4a5abdc73a67a0142f24.aspx'
         />
         <Content>
           <Bar/>

@@ -8,6 +8,9 @@ interface Props {
   title?: string;
   subtitle?: string;
   register?: string;
+  speakers?: string;
+  agenda?: string;
+  travel?: string;
 }
 
 
@@ -44,7 +47,7 @@ const Title = styled.h1`
 const Button = styled.a`
   display: block;
   color: white;
-  background: #DB8E39;
+  background: ${props => props.theme.color};
   width: 26vmin;
   height: 6.5vmin;
   max-width: 300px;
@@ -56,7 +59,7 @@ const Button = styled.a`
   position: relative;
   border-radius: 20px;
 
-  :hover { background: #FBAE59; }
+  :hover { background: ${props => props.theme.hover}; }
 
   @media (orientation: portrait) {
     width: 26vw;
@@ -137,13 +140,13 @@ class TitleBlock extends React.Component<Props, {}> {
                 <ButtonText>REGISTER</ButtonText>
             </Button>
             <Row>
-              <InfoLink href="http://www.cvent.com/events/31st-annual-shingo-conference/speakers-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
+              <InfoLink href={this.props.speakers}>
                 <InfoLinkText>Speakers</InfoLinkText>
               </InfoLink>
-              <InfoLink href="http://www.cvent.com/events/31st-annual-shingo-conference/agenda-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
+              <InfoLink href={this.props.agenda}>
                 <InfoLinkText>Agenda</InfoLinkText>
               </InfoLink>
-              <InfoLink href="http://www.cvent.com/events/31st-annual-shingo-conference/travel-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
+              <InfoLink href={this.props.travel}>
                 <InfoLinkText>Travel</InfoLinkText>
               </InfoLink>
             </Row>
