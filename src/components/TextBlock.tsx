@@ -9,6 +9,13 @@ const Title = styled.h2`
     text-align: center;
 `;
 
+const Link = styled.a`
+    text-decoration: none;
+    color: #DB8E39;
+
+    :hover { color: #FBAE59; }
+`
+
 class TextBlock extends React.Component<Props, {}> {
     render() {
         return (
@@ -23,6 +30,8 @@ class TextBlock extends React.Component<Props, {}> {
                     <li>Join the discussion in break-out sessions.</li>
                 </ul>
                 <p>This year’s tour sites are to <strong>Toyota</strong> and <strong>LeanCor</strong>. Both will inspire you with new ideas for improvement. Sign up for a workshop and/or site tour to catch one or both of these valuable experiences.</p>
+                <p>If you are interested in becoming an exhibitor and/or sponsor, <Link href="https://res.cloudinary.com/shingo/image/upload/v1543950007/Events/IntlConference/2019/ExhibitorProspectus.pdf">click here.</Link></p>
+                <p>For more information on why you should attend, <Link href="https://res.cloudinary.com/shingo/image/upload/v1547674632/Events/IntlConference/2019/AttendeeProspectus_A1_-_FIXED_-_01-2019.pdf">click here.</Link></p>
             </div>
         );
     }
