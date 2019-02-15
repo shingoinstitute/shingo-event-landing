@@ -8,9 +8,9 @@ interface Props {
   title?: string;
   subtitle?: string;
   register?: string;
-  speakers?: string;
-  agenda?: string;
-  travel?: string;
+  link1: [string, string];
+  link2: [string, string];
+  link3: [string, string];
 }
 
 
@@ -112,7 +112,7 @@ const WholeBlock = styled<{ banner?: string }, "div">("div")`
   padding: 0;
   background-color: rgb(134, 161, 204);
   background-image: url(${props => props.banner});
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 5px 8px #555
@@ -140,14 +140,14 @@ class TitleBlock extends React.Component<Props, {}> {
                 <ButtonText>REGISTER</ButtonText>
             </Button>
             <Row>
-              <InfoLink href={this.props.speakers}>
-                <InfoLinkText>Speakers</InfoLinkText>
+              <InfoLink href={this.props.link1[1]}>
+                <InfoLinkText>{this.props.link1[0]}</InfoLinkText>
               </InfoLink>
-              <InfoLink href={this.props.agenda}>
-                <InfoLinkText>Agenda</InfoLinkText>
+              <InfoLink href={this.props.link2[1]}>
+                <InfoLinkText>{this.props.link2[0]}</InfoLinkText>
               </InfoLink>
-              <InfoLink href={this.props.travel}>
-                <InfoLinkText>Travel</InfoLinkText>
+              <InfoLink href={this.props.link3[1]}>
+                <InfoLinkText>{this.props.link3[0]}</InfoLinkText>
               </InfoLink>
             </Row>
         </TitleContainer>

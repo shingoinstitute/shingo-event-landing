@@ -114,6 +114,9 @@ const Bar = styled.div`
 class Cincinnati extends React.Component<{}> {
   render() {
     document.title = 'Shingo Conference | Cincinnati, Ohio'
+    const link1: [string, string] = ["Speakers",'https://www.cvent.com/events/31st-annual-shingo-conference/speakers-cc99906ddb2f4a5abdc73a67a0142f24.aspx']
+    const link2: [string, string] = ['Agenda','https://www.cvent.com/events/31st-annual-shingo-conference/agenda-cc99906ddb2f4a5abdc73a67a0142f24.aspx']
+    const link3: [string, string] = ['Travel','http://www.cvent.com/events/31st-annual-shingo-conference/travel-cc99906ddb2f4a5abdc73a67a0142f24.aspx']
     return (
       <div>
         <TitleBlock
@@ -122,9 +125,9 @@ class Cincinnati extends React.Component<{}> {
               subtitle = 'MAKE WORK MEANINGFUL'
               info = 'CINCINNATI, OHIO • MAY 1-2, 2019'
               register = 'https://www.cvent.com/events/31st-annual-shingo-conference/registration-cc99906ddb2f4a5abdc73a67a0142f24.aspx?fqp=true'
-              speakers = 'https://www.cvent.com/events/31st-annual-shingo-conference/speakers-cc99906ddb2f4a5abdc73a67a0142f24.aspx'
-              agenda = 'https://www.cvent.com/events/31st-annual-shingo-conference/agenda-cc99906ddb2f4a5abdc73a67a0142f24.aspx'
-              travel = 'http://www.cvent.com/events/31st-annual-shingo-conference/travel-cc99906ddb2f4a5abdc73a67a0142f24.aspx'
+              link1 = {link1}
+              link2 = {link2}
+              link3 = {link3}
         />
         <Content>
           <Bar/>
