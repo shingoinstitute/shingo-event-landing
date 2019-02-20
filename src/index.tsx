@@ -14,7 +14,7 @@ const CincinnatiTheme = {
   hover: '#fbae59'
 }
 
-const CincinnatiPage = (
+const CincinnatiPage = () => (
   <ThemeProvider theme={CincinnatiTheme}>
     <Cincinnati/>
   </ThemeProvider>
@@ -25,7 +25,7 @@ const NETheme = {
   hover: '#3fb3ff'
 }
 
-const NEPage = (
+const NEPage = () => (
   <ThemeProvider theme={NETheme}>
     <NEStudyTour/>
   </ThemeProvider>
@@ -34,9 +34,7 @@ const NEPage = (
 const Routing = (
   <Router>
     <div>
-      // @ts-ignore
       <Route path="/" component={NEPage}/>
-      // @ts-ignore
       <Route path="/conference" component={CincinnatiPage}/>
     </div>
   </Router>
