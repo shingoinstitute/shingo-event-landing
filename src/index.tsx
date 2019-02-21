@@ -34,7 +34,7 @@ const NEPage = () => (
 const Routing = (
   <Router>
     <div>
-      <Route path="/" component={NEPage}/>
+      <Route path="/northeast" component={NEPage}/>
       <Route path="/conference" component={CincinnatiPage}/>
     </div>
   </Router>
