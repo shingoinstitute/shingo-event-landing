@@ -23,9 +23,9 @@ const Footnote = styled.p`
 
 const Link = styled.a`
     text-decoration: none;
-    color: #DB8E39;
+    color: ${props => props.theme.color};
 
-    :hover { color: #FBAE59; }
+    :hover { color: ${props => props.theme.hover}; }
 `
 
 class TextBlock extends React.Component<Props, {}> {

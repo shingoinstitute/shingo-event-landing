@@ -8,6 +8,9 @@ interface Props {
   title?: string;
   subtitle?: string;
   register?: string;
+  link1: [string, string];
+  link2: [string, string];
+  link3: [string, string];
 }
 
 
@@ -44,7 +47,7 @@ const Title = styled.h1`
 const Button = styled.a`
   display: block;
   color: white;
-  background: #DB8E39;
+  background: ${props => props.theme.color};
   width: 26vmin;
   height: 6.5vmin;
   max-width: 300px;
@@ -56,7 +59,7 @@ const Button = styled.a`
   position: relative;
   border-radius: 20px;
 
-  :hover { background: #FBAE59; }
+  :hover { background: ${props => props.theme.hover}; }
 
   @media (orientation: portrait) {
     width: 26vw;
@@ -109,7 +112,7 @@ const WholeBlock = styled<{ banner?: string }, "div">("div")`
   padding: 0;
   background-color: rgb(134, 161, 204);
   background-image: url(${props => props.banner});
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 5px 8px #555
@@ -137,14 +140,14 @@ class TitleBlock extends React.Component<Props, {}> {
                 <ButtonText>REGISTER</ButtonText>
             </Button>
             <Row>
-              <InfoLink href="http://www.cvent.com/events/31st-annual-shingo-conference/speakers-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
-                <InfoLinkText>Speakers</InfoLinkText>
+              <InfoLink href={this.props.link1[1]}>
+                <InfoLinkText>{this.props.link1[0]}</InfoLinkText>
               </InfoLink>
-              <InfoLink href="http://www.cvent.com/events/31st-annual-shingo-conference/agenda-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
-                <InfoLinkText>Agenda</InfoLinkText>
+              <InfoLink href={this.props.link2[1]}>
+                <InfoLinkText>{this.props.link2[0]}</InfoLinkText>
               </InfoLink>
-              <InfoLink href="http://www.cvent.com/events/31st-annual-shingo-conference/travel-cc99906ddb2f4a5abdc73a67a0142f24.aspx">
-                <InfoLinkText>Travel</InfoLinkText>
+              <InfoLink href={this.props.link3[1]}>
+                <InfoLinkText>{this.props.link3[0]}</InfoLinkText>
               </InfoLink>
             </Row>
         </TitleContainer>
