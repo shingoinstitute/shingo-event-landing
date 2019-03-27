@@ -5,6 +5,8 @@ import TitleBlock from '../components/TitleBlock'
 import TextBlock from '../components/TextBlock'
 import VideoBlock from '../components/VideoBlock'
 import Footer from '../components/Footer'
+import NavBar from '../components/NavBar'
+// import Newsletter from '../components/Newsletter'
 
 const Content = styled.div`
   margin: 40px;
@@ -110,7 +112,6 @@ const Bar = styled.div`
   margin: 30px auto;
 `
 
-
 class Cincinnati extends React.Component<{}> {
   render() {
     document.title = 'Shingo Conference | Cincinnati, Ohio'
@@ -119,6 +120,7 @@ class Cincinnati extends React.Component<{}> {
     const link3: [string, string] = ['Travel','http://www.cvent.com/events/31st-annual-shingo-conference/travel-cc99906ddb2f4a5abdc73a67a0142f24.aspx']
     return (
       <div>
+        <NavBar/>
         <TitleBlock
               banner = 'https://res.cloudinary.com/shingo/image/upload/v1539204551/iStock-124393964_blue_small2_zrxr82.jpg'
               title = 'SHINGO CONFERENCE'

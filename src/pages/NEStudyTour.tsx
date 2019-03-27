@@ -5,6 +5,7 @@ import TitleBlock from '../components/TitleBlock'
 import TextBlock from '../components/NETextBlock'
 import PhotoBlock from '../components/PhotoBlock'
 import Footer from '../components/Footer'
+import NavBar from '../components/NavBar'
 
 const Content = styled.div`
   margin: 40px;
@@ -41,6 +42,7 @@ class NEStudyTour extends React.Component<{}> {
       const link3: [string, string] = ['Contact','https//www.cvent.com/events/2019-shingo-northeast-study-tour/contactus-08b8dbae81ea4d1a9ab900a29808119e.aspx']
       return (
         <div>
+          <NavBar/>
           <TitleBlock
                 banner = 'https://res.cloudinary.com/shingo/image/upload/v1549898198/Events/StudyTours/2019Northeast/NortheastBannerImage.jpg'
                 title = 'NORTHEAST STUDY TOUR'

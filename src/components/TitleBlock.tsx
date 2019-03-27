@@ -126,6 +126,10 @@ const WholeBlock = styled<{ banner?: string }, "div">("div")`
     height: 40vh;
     max-height: 55vw;
   }
+
+  @media screen and (max-device-width: 769px) {
+    text-align: center !important;
+  }
 `;
 
 class TitleBlock extends React.Component<Props, {}> {
