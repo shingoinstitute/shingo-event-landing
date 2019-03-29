@@ -6,7 +6,7 @@ import TextBlock from '../components/TextBlock'
 import VideoBlock from '../components/VideoBlock'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
-// import Newsletter from '../components/Newsletter'
+import Newsletter from '../components/Newsletter'
 
 const Content = styled.div`
   margin: 40px;
@@ -121,6 +121,7 @@ class Cincinnati extends React.Component<{}> {
     return (
       <div>
         <NavBar/>
+        <Newsletter/>
         <TitleBlock
               banner = 'https://res.cloudinary.com/shingo/image/upload/v1539204551/iStock-124393964_blue_small2_zrxr82.jpg'
               title = 'SHINGO CONFERENCE'

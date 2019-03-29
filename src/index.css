@@ -1,5 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans:regular,italic,700,700italic&subsets=latin-ext,latin);
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  background: white; 
+  font-family: "Quattrocento Sans"; 
+  font-weight: 400; 
+  color: #555555; 
+  position: relative; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
 }
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: "Quattrocento Sans"; 
+  font-weight: Normal; 
+  color: #444444; 
+  text-rendering: optimizeLegibility; 
+  padding-top: 0.273em; 
+  line-height: 1.15538em; 
+  padding-bottom: 0.273em; 
+}
+
+h2 { font-size: 42px; font-size: 2.625rem; }
+
+h3 { font-size: 30px; font-size: 1.875rem; }
+
+h4 { font-size: 26px; font-size: 1.625rem; }
+
+h5 { font-size: 18px; font-size: 1.125rem; }
+
+h6 { font-size: 16px; font-size: 1rem; }

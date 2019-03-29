@@ -6,9 +6,24 @@ interface Props {
 }
 
 const Container = styled.div`
-    height: 100px;
+    height: 50px;
     min-width: 100%;
-    background: salmon;
+    background: #640921;
+    z-index: 10;
+    box-shadow: 0 2px 5px #CCC;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+        color:white;
+        padding: 0;
+        font-weight: 500;
+    }
+
+    
 `
 
 class Newsletter extends React.Component<Props, {}> {
