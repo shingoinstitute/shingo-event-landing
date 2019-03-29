@@ -6,6 +6,7 @@ import TextBlock from '../components/NETextBlock'
 import PhotoBlock from '../components/PhotoBlock'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
+import Newsletter from '../components/Newsletter'
 
 const Content = styled.div`
   margin: 40px;
@@ -43,6 +44,7 @@ class NEStudyTour extends React.Component<{}> {
       return (
         <div>
           <NavBar/>
+          <Newsletter/>
           <TitleBlock
                 banner = 'https://res.cloudinary.com/shingo/image/upload/v1549898198/Events/StudyTours/2019Northeast/NortheastBannerImage.jpg'
                 title = 'NORTHEAST STUDY TOUR'
